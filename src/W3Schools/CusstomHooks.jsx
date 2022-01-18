@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DestructuringObj = () => {
+const CusstomHooks = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const DestructuringObj = () => {
     )
 }
 
-export default DestructuringObj
+export default CusstomHooks
