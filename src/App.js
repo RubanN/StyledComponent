@@ -1,5 +1,8 @@
 import React, { useState, useCallback } from "react";
 import './App.css';
+import Message, { Message1, Message2, Message3, Toggle, UpdateUseState, UpdateUseState1, UpdateUseState2 } from "./ArticleUseState/Message";
+import FirstExample from "./ShollowCopyvsDeepCopy/FirstExample";
+import StyledButton, { FancyButton } from "./Styled-codeEvolution/Button/Button";
 // import Hello from './W3Schools/CallbackHook/Hello';
 
 function App() {
@@ -12,11 +15,24 @@ function App() {
       {/* <Hello increment={increment} />
       <div>Count:{count}</div> */}
 
-
-
-
-
-
+      {/* <StyledButton>Styled button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <StyledButton variant="outline">Styled button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <FancyButton as="a">Fancy button</FancyButton> */}
+      {/* <Message /> */}
+      {/* <Message1 /> */}
+      {/* <Message2 /> */}
+      {/* <Message3 /> */}
+      {/* <FirstExample /> */}
+      <Toggle />
+      {/* <UpdateUseState /> */}
+      {/* <UpdateUseState1 /> */}
+      <UpdateUseState2 />
     </div>
   );
 }
