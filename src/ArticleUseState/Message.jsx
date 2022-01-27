@@ -204,3 +204,30 @@ export const UpdateUseState2 =()=>{
         </>
     )
 }
+export const UpdateUseState3 =()=>{
+    const [projectGroupDetails, setProjectGroupDetails] = useState({
+        "projectGroupId": "",
+        "projectGroup": "DDD",
+        "project-id": "",
+        "appd-ui": "",
+        "appd-node": ""    
+    });
+    const inputGroupChangeHandler =(event)=>{
+       setProjectGroupDetails((prev)=>({
+           ...prev,
+           [event.target.id]:event.target.value
+       }))
+    }
+    return(
+        <>
+        {console.log('projectGroupDetails',projectGroupDetails)}
+        <h1>{projectGroupDetails.projectGroupId}</h1>
+        <input
+             id="projectGroupId" 
+             labelText="Project Group Id" 
+             value={projectGroupDetails.projectGroupId}
+             onChange={inputGroupChangeHandler}
+            />
+        </>
+    )
+}
